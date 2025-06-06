@@ -18,24 +18,29 @@
     display: flex;
     flex-direction: column;
   }
-  header {
-    padding: 60px 20px;
+  .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 40px 20px 80px;
+    flex-grow: 1;
+  }
+
+  header {
     text-align: center;
+    margin-bottom: 60px;
   }
   header h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 4.5rem;
+    font-size: 5rem;
     font-weight: 700;
     color: #a7d49b;
     letter-spacing: 3px;
     margin-bottom: 15px;
   }
   header p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     max-width: 700px;
-    margin: 0 auto 40px;
+    margin: 0 auto 30px;
     color: #b9ddb3;
     line-height: 1.6;
   }
@@ -43,7 +48,7 @@
     background-color: #4caf50;
     color: white;
     border: none;
-    padding: 16px 50px;
+    padding: 16px 60px;
     font-size: 1.25rem;
     font-weight: 700;
     border-radius: 50px;
@@ -56,73 +61,118 @@
     background-color: #3a8d3a;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
   }
-  nav {
-    margin: 50px auto;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
+
+  /* Event category grid */
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+    margin-bottom: 60px;
   }
-  nav a {
-    background-color: #3e7d35;
-    color: white;
+  .category-card {
+    background: rgba(64, 112, 64, 0.3);
+    border-radius: 20px;
+    padding: 30px 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+  }
+  .category-card:hover {
+    background: rgba(64, 112, 64, 0.5);
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.35);
+  }
+  .category-card h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    color: #d0ffd0;
+  }
+  .category-card p {
+    font-size: 1rem;
+    color: #c8f9c8;
+  }
+  .category-card a {
+    display: block;
+    margin-top: 20px;
     text-decoration: none;
-    padding: 12px 28px;
-    border-radius: 30px;
+    color: #b9ddb3;
     font-weight: 600;
-    font-size: 1.05rem;
-    transition: background-color 0.3s ease;
+    font-size: 1rem;
   }
-  nav a:hover {
-    background-color: #2a5b24;
+  .category-card a:hover {
+    color: #4caf50;
   }
+
   footer {
-    margin-top: auto;
     background-color: #133820;
     color: #a5c8a3;
-    padding: 30px 20px;
+    padding: 40px 20px;
     text-align: center;
     font-size: 0.9rem;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
   }
   footer strong {
     display: block;
     color: #d4f0d4;
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 1rem;
   }
+
+  /* Responsive tweaks */
   @media (max-width: 600px) {
     header h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
     .cta-button {
-      padding: 14px 30px;
+      padding: 14px 40px;
       font-size: 1.1rem;
     }
-    nav a {
-      padding: 10px 20px;
-      font-size: 1rem;
+    .category-card h2 {
+      font-size: 2rem;
     }
   }
 </style>
 </head>
 <body>
 
-<header>
-  <h1>e-Invites</h1>
-  <p>Create beautiful and personalized electronic invitations for every life event — weddings, birthdays, baptisms, graduations, and more. Share your special moments with elegance and ease.</p>
-  <a href="wedding.html" class="cta-button">Start Your Invitation</a>
-</header>
+<div class="container">
 
-<nav>
-  <a href="wedding.html">Wedding</a>
-  <a href="birthday.html">Birthday</a>
-  <a href="baptism.html">Baptism</a>
-  <a href="graduation.html">Graduation</a>
-  <a href="more.html">More</a>
-</nav>
+  <header>
+    <h1>e-Invites</h1>
+    <p>Create beautiful and personalized electronic invitations for every life event — weddings, birthdays, baptisms, graduations, and more. Share your special moments with elegance and ease.</p>
+    <a href="wedding.html" class="cta-button">Start Your Invitation</a>
+  </header>
+
+  <section class="categories">
+    <div class="category-card">
+      <h2>Wedding</h2>
+      <p>Elegant and timeless invitations for your special day, with options for venue details, dress code, and more.</p>
+      <a href="wedding.html">Explore Wedding Invites →</a>
+    </div>
+    <div class="category-card">
+      <h2>Birthday</h2>
+      <p>Fun and festive invites perfect for celebrating milestones with friends and family.</p>
+      <a href="birthday.html">Explore Birthday Invites →</a>
+    </div>
+    <div class="category-card">
+      <h2>Baptism</h2>
+      <p>Simple and heartfelt invitations to mark this sacred and joyful occasion.</p>
+      <a href="baptism.html">Explore Baptism Invites →</a>
+    </div>
+    <div class="category-card">
+      <h2>Graduation</h2>
+      <p>Celebrate academic success with stylish invites that honor achievements.</p>
+      <a href="graduation.html">Explore Graduation Invites →</a>
+    </div>
+    <div class="category-card">
+      <h2>More</h2>
+      <p>Custom invitations for anniversaries, reunions, and all special moments.</p>
+      <a href="more.html">Explore More →</a>
+    </div>
+  </section>
+
+</div>
 
 <footer>
   <p>This website helps you share your special moments through simple, meaningful digital invitations designed for every Filipino celebration.</p>
