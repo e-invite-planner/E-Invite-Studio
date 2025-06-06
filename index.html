@@ -3,92 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>e-Invite Studio</title>
+  <title>e-Invites by You</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #e0f8e0, #b6e2b6);
+      color: #2f4f2f;
       text-align: center;
-      background: linear-gradient(to bottom right, #eafaf1, #d7f5e6);
-      color: #2d4739;
+      scroll-behavior: smooth;
     }
     header {
-      background: #4CAF50;
-      color: white;
-      padding: 40px 20px;
+      padding: 60px 20px 30px;
+      background: transparent;
     }
-    h1 { margin: 0; font-size: 2.2em; }
-    p { margin: 10px 0 0; font-size: 1em; }
-    .gallery {
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+    .nav-links {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      padding: 40px 10px;
+      flex-wrap: wrap;
+      gap: 15px;
     }
-    .card {
-      background: white;
-      border: 2px solid #b7e4c7;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-      margin: 15px;
-      width: 220px;
+    .nav-links a {
       text-decoration: none;
-      color: #2d4739;
-      transition: transform 0.3s, box-shadow 0.3s;
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background-color 0.3s;
     }
-    .card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    }
-    .card img {
-      width: 100%;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      height: 140px;
-      object-fit: cover;
-    }
-    .card h3 {
-      padding: 15px 10px;
-      margin: 0;
+    .nav-links a:hover {
+      background-color: #3e8e41;
     }
     footer {
-      background: #4CAF50;
-      color: white;
-      padding: 20px;
-      margin-top: 30px;
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #444;
+      padding-bottom: 20px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>e-Invite Studio</h1>
-    <p>Create clean and modern digital invitations for your special events</p>
+    <h1>Welcome to e-Invites</h1>
+    <p>Create and share beautiful, personalized invitations for any event — from weddings and birthdays to baptisms and graduations. Everything in one elegant space.</p>
+    <div class="nav-links">
+      <a href="wedding.html">Wedding</a>
+      <a href="birthday.html">Birthday</a>
+      <a href="baptism.html">Baptism</a>
+      <a href="graduation.html">Graduation</a>
+      <a href="more.html">More</a>
+    </div>
   </header>
-  <section class="gallery">
-    <a class="card" href="wedding.html">
-      <img src="https://images.unsplash.com/photo-1530026405186-ed1f13931304?auto=format&fit=crop&w=600&q=60" alt="Wedding">
-      <h3>Wedding</h3>
-    </a>
-    <a class="card" href="birthday.html">
-      <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=60" alt="Birthday">
-      <h3>Birthday</h3>
-    </a>
-    <a class="card" href="baptism.html">
-      <img src="https://images.unsplash.com/photo-1575908533013-8e7b8cd7ab7f?auto=format&fit=crop&w=600&q=60" alt="Baptism">
-      <h3>Baptism</h3>
-    </a>
-    <a class="card" href="graduation.html">
-      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=600&q=60" alt="Graduation">
-      <h3>Graduation</h3>
-    </a>
-    <a class="card" href="other.html">
-      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=60" alt="Other">
-      <h3>Other</h3>
-    </a>
-  </section>
+
   <footer>
-    <p>&copy; 2025 e-Invite Studio. All rights reserved.</p>
+    &copy; 2025 e-Invites. All rights reserved.
   </footer>
 </body>
 </html>
