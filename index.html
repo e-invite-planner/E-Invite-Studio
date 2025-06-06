@@ -8,65 +8,69 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #e0f8e0, #b6e2b6);
-      color: #2f4f2f;
+      background: linear-gradient(to bottom right, #0f2f1f, #1c4d30);
+      color: #e6ffe6;
       text-align: center;
-      scroll-behavior: smooth;
-    }
-    header {
-      padding: 60px 20px 30px;
-      background: transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
     }
     h1 {
       font-size: 3em;
       margin-bottom: 10px;
+      color: #d0ffd0;
     }
     p {
       font-size: 1.2em;
       max-width: 600px;
       margin: 0 auto 40px;
+      color: #c8f9c8;
     }
     .nav-links {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      flex-direction: column;
       gap: 15px;
+      width: 100%;
+      max-width: 300px;
     }
     .nav-links a {
       text-decoration: none;
       background-color: #4CAF50;
       color: white;
-      padding: 12px 24px;
+      padding: 14px;
       border-radius: 30px;
       font-weight: bold;
-      transition: background-color 0.3s;
+      font-size: 1em;
+      transition: background-color 0.3s, transform 0.2s;
     }
     .nav-links a:hover {
-      background-color: #3e8e41;
+      background-color: #3a8d3a;
+      transform: scale(1.05);
     }
     footer {
       margin-top: 60px;
       font-size: 0.9em;
-      color: #444;
-      padding-bottom: 20px;
+      color: #aaffaa;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to e-Invites</h1>
-    <p>Create and share beautiful, personalized invitations for any event — from weddings and birthdays to baptisms and graduations. Everything in one elegant space.</p>
-    <div class="nav-links">
-      <a href="wedding.html">Wedding</a>
-      <a href="birthday.html">Birthday</a>
-      <a href="baptism.html">Baptism</a>
-      <a href="graduation.html">Graduation</a>
-      <a href="more.html">More</a>
-    </div>
-  </header>
+  <h1>Welcome to e-Invites</h1>
+  <p>Choose the event you’d like to explore. Customize invitations for weddings, birthdays, baptisms, graduations, and more — all in one peaceful space.</p>
+  
+  <div class="nav-links">
+    <a href="wedding.html">Wedding</a>
+    <a href="birthday.html">Birthday</a>
+    <a href="baptism.html">Baptism</a>
+    <a href="graduation.html">Graduation</a>
+    <a href="more.html">More</a>
+  </div>
 
   <footer>
-    &copy; 2025 e-Invites. All rights reserved.
+    &copy; 2025 e-Invites by You
   </footer>
 </body>
 </html>
