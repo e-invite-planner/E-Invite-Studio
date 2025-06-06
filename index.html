@@ -2,86 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>e-Invites by You</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap" rel="stylesheet" />
   <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #0f2f1f, #1c4d30);
-      color: #e6ffe6;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      background: #e6f2e6;
+      color: #2f4f2f;
       min-height: 100vh;
-      padding: 20px;
-    }
-    h1 {
-      font-family: 'Dancing Script', cursive;
-      font-size: 4em;
-      margin-bottom: 10px;
-      color: #d0ffd0;
-      letter-spacing: 1.5px;
-      font-weight: 700;
-    }
-    p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: 0 auto 20px;
-      color: #c8f9c8;
-    }
-    .nav-links {
       display: flex;
       flex-direction: column;
-      gap: 15px;
-      width: 100%;
-      max-width: 300px;
-      margin: 30px 0;
+      align-items: center;
+      padding: 40px 20px;
     }
-    .nav-links a {
+    header {
+      max-width: 900px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 4rem;
+      margin: 0;
+      color: #3a6b35;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 12px;
+      color: #466d3c;
+      line-height: 1.5;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 700px;
+      margin-bottom: 50px;
+    }
+    nav a {
       text-decoration: none;
-      background-color: #4CAF50;
+      background: #4caf50;
       color: white;
-      padding: 14px;
+      padding: 18px 36px;
       border-radius: 30px;
-      font-weight: bold;
-      font-size: 1em;
-      transition: background-color 0.3s, transform 0.2s;
+      font-weight: 700;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      min-width: 130px;
+      text-align: center;
     }
-    .nav-links a:hover {
-      background-color: #3a8d3a;
-      transform: scale(1.05);
+    nav a:hover {
+      background: #3a8d3a;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
     }
     footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #aaffaa;
-      max-width: 600px;
-      padding: 0 20px;
+      max-width: 700px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #466d3c;
+      line-height: 1.4;
+      border-top: 1px solid #9fcf9f;
+      padding-top: 20px;
     }
-    footer p {
-      margin: 8px 0;
+    footer strong {
+      display: block;
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #2f4f2f;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to e-Invites</h1>
-  <p>Create beautiful and personalized electronic invitations for all your life’s events. Whether it's a wedding, birthday, baptism, or graduation, this space allows you to share every detail with elegance and ease.</p>
-  
-  <div class="nav-links">
+  <header>
+    <h1>e-Invites</h1>
+    <p>Create beautiful and personalized electronic invitations for all your life’s events. Whether it's a wedding, birthday, baptism, or graduation, this space allows you to share every detail with elegance and ease.</p>
+  </header>
+  <nav>
     <a href="wedding.html">Wedding</a>
     <a href="birthday.html">Birthday</a>
     <a href="baptism.html">Baptism</a>
     <a href="graduation.html">Graduation</a>
     <a href="more.html">More</a>
-  </div>
-
+  </nav>
   <footer>
     <p>This website was created to help people share their special moments through simple yet meaningful digital invitations. It is designed to be calming, organized, and accessible for every Filipino celebration.</p>
-    <p><strong>Mark Baltazar</strong><br/>Founder & Digital Creator of e-Invites</p>
+    <strong>Mark Baltazar<br/>Founder & Digital Creator of e-Invites</strong>
     <p>Passionate about blending technology and creativity, Mark is dedicated to making celebrations memorable with easy-to-use digital tools.</p>
   </footer>
 </body>
