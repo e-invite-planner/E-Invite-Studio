@@ -2,120 +2,142 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Birthday Invitation</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Pacifico&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Invitations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Dancing+Script&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: 'Quicksand', sans-serif;
-      background: #edf5e1;
-      color: #2f3e2f;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #f2f8f2, #d6f5d6);
+      color: #2d3e2d;
+      min-height: 100vh;
     }
     header {
-      background: #a8d5ba;
+      background: url('https://images.unsplash.com/photo-1584467735871-bd1a1d676c1c') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 50px 20px;
-      border-bottom: 4px solid #88c9a1;
+      color: white;
     }
     header h1 {
-      font-family: 'Pacifico', cursive;
-      font-size: 3rem;
-      color: #2f3e2f;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #47624f;
-    }
-    .themes {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .theme-card {
-      background: #dcedc8;
-      border-radius: 15px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 4rem;
+      background: rgba(0, 0, 0, 0.4);
       padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-      text-decoration: none;
-      color: inherit;
+      border-radius: 10px;
     }
-    .theme-card:hover {
-      transform: scale(1.03);
-    }
-    .theme-card h2 {
-      font-family: 'Pacifico', cursive;
-      font-size: 1.5rem;
-      color: #558b2f;
-    }
-    .theme-card p {
-      font-size: 0.95rem;
-      color: #4e6541;
-      margin-top: 10px;
-    }
-    .footer {
-      background: #c8e6c9;
+    .container {
+      max-width: 1100px;
+      margin: auto;
       padding: 40px 20px;
       text-align: center;
-      font-size: 1rem;
-      color: #2e473b;
-      border-top: 4px solid #a5d6a7;
     }
-    .footer button {
-      background: #66bb6a;
-      border: none;
-      padding: 12px 30px;
-      border-radius: 25px;
-      color: white;
+    .section {
+      margin: 40px 0;
+    }
+    .section h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #4caf50;
+    }
+    .section p {
       font-size: 1.1rem;
-      cursor: pointer;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      color: #444;
     }
-    .footer button:hover {
-      background: #4caf50;
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #2d5c2d;
+    }
+    .card p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .cta-button {
+      margin-top: 40px;
+      background-color: #4caf50;
+      color: white;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .cta-button:hover {
+      background-color: #3c8d3c;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      background-color: #e7f7e7;
+      color: #333;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Let's Celebrate!</h1>
-    <p>Choose your favorite birthday theme and join the fun</p>
+    <h1>Celebrate Life with Style</h1>
   </header>
 
-  <section class="themes">
-    <a href="#" class="theme-card">
-      <h2>Garden Party</h2>
-      <p>Fresh greens, flowers, and outdoor fun for all ages</p>
-    </a>
-    <a href="#" class="theme-card">
-      <h2>Safari Adventure</h2>
-      <p>Roar into the wild with animals and jungle vibes</p>
-    </a>
-    <a href="#" class="theme-card">
-      <h2>Carnival Fun</h2>
-      <p>Colorful tents, popcorn, and exciting games</p>
-    </a>
-    <a href="#" class="theme-card">
-      <h2>Princess Tea</h2>
-      <p>Royal treats, glitter, and dress-up for the day</p>
-    </a>
-    <a href="#" class="theme-card">
-      <h2>Retro Dance</h2>
-      <p>Music, neon lights, and 80s flair</p>
-    </a>
-  </section>
+  <div class="container">
+    <section class="section">
+      <h2>Birthday Invitations</h2>
+      <p>Discover our collection of fun, colorful, and fully customizable invitations for both kids and adults. Whether it's a surprise party or a themed celebration, make your invites special!</p>
+    </section>
 
-  <footer class="footer">
-    <p>Click below to RSVP and send your event details</p>
-    <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSd2-bgXlpLHeoQFzOXm0whg142wlTY9I38JTMkPAf2WXeNVhg/viewform'">RSVP Now</button>
+    <section class="cards">
+      <div class="card">
+        <h3>Kids Party</h3>
+        <p>Bright, playful designs with cartoon themes, balloons, and confetti for a fun celebration.</p>
+      </div>
+      <div class="card">
+        <h3>Adult Birthday</h3>
+        <p>Elegant or themed options for milestone birthdays, cocktail parties, or simple get-togethers.</p>
+      </div>
+      <div class="card">
+        <h3>Surprise Party</h3>
+        <p>Send secret invites with RSVP tracking and all the fun without giving anything away!</p>
+      </div>
+      <div class="card">
+        <h3>Theme Parties</h3>
+        <p>From retro to tropical vibes, create personalized invites that match your party's theme.</p>
+      </div>
+    </section>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2-bgXlpLHeoQFzOXm0whg142wlTY9I38JTMkPAf2WXeNVhg/viewform?usp=header" class="cta-button">Start Your Invitation</a>
+  </div>
+
+  <footer>
+    <p>Digital invitations made easy and joyful for every birthday celebration. Crafted with love by your Digital Planner.</p>
   </footer>
-
 </body>
 </html>
