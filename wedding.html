@@ -2,206 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Anna & Marco's Wedding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding Invitation</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      background: url('https://images.unsplash.com/photo-1579547945484-9e396f3cc809?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('your-wedding-venue.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #2d4739;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+      color: #2f3e2f;
+    }
+    .container {
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 30px;
+      border-radius: 20px;
       text-align: center;
     }
-
-    .overlay {
-      background-color: rgba(255, 255, 255, 0.7);
-      padding: 40px 20px;
-      border-radius: 16px;
-      max-width: 800px;
-      width: 90%;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(8px);
-    }
-
     h1, h2 {
-      color: #3a6840;
       margin-bottom: 10px;
     }
-
-    p, li {
-      font-size: 16px;
-      margin: 8px 0;
-      color: #2d4739;
+    p {
+      margin: 10px 0;
+      line-height: 1.6;
     }
-
-    .names {
-      font-size: 26px;
-      font-weight: bold;
-      color: #204020;
-      margin: 10px 0 20px;
-    }
-
     .section {
-      margin-top: 40px;
+      margin: 30px 0;
     }
-
-    .slideshow {
-      position: relative;
-      height: 350px;
-      overflow: hidden;
-      margin: 20px auto 0;
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .gallery img, .gallery video {
+      height: 200px;
       border-radius: 12px;
-      max-width: 100%;
-      width: 100%;
     }
-
-    .slide-media {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 12px;
-      display: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .slide-media.active {
-      display: block;
-      animation: fade 1s ease-in-out;
-    }
-
-    @keyframes fade {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    .venue-img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-
-    ul {
+    .entourage ul, .guests ul {
       list-style: none;
       padding: 0;
-      margin: 0 auto;
-      max-width: 400px;
-      text-align: center;
     }
-
-    li {
+    .entourage li, .guests li {
       margin: 5px 0;
     }
-
-    .back-link {
-      display: inline-block;
-      margin: 40px auto 0;
-      text-decoration: none;
-      color: #4CAF50;
-      font-weight: bold;
-      border: 1px solid #4CAF50;
+    .rsvp button {
       padding: 10px 20px;
-      border-radius: 8px;
-      transition: background 0.3s;
-    }
-
-    .back-link:hover {
       background-color: #4CAF50;
       color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .rsvp button:hover {
+      background-color: #3e8e41;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1>You Are Invited</h1>
-    <p>to the wedding celebration of</p>
-    <div class="names">Anna Marie & Marco Cruz</div>
-    <p>July 15, 2025 at Greenleaf Garden, Tagaytay</p>
-    <p>3:00 PM Ceremony | 5:00 PM Reception</p>
+  <div class="container">
+    <h1>You're Invited!</h1>
+    <h2>Juan & Maria</h2>
+    <p>After years of love and laughter, we joyfully invite you to witness our union and celebrate this new chapter in our lives.</p>
 
     <div class="section">
-      <h2>Our Love Story</h2>
-      <p>Anna and Marco met during college and have been inseparable ever since. Their story is one of friendship, adventure, and true love. After 6 beautiful years together, they are ready to begin a new chapter as husband and wife.</p>
-    </div>
-
-    <div class="section">
-      <h2>Prenup Memories</h2>
-      <div class="slideshow">
-        <img class="slide-media active" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=1000&q=60" />
-        <img class="slide-media" src="https://images.unsplash.com/photo-1530026405186-ed1f13931304?auto=format&fit=crop&w=1000&q=60" />
-        <img class="slide-media" src="https://images.unsplash.com/photo-1521119989659-a83eee488004?auto=format&fit=crop&w=1000&q=60" />
-        <video class="slide-media" autoplay muted loop>
-          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-        </video>
-        <video class="slide-media" autoplay muted loop>
-          <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4" />
-        </video>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Our Venue</h2>
-      <img class="venue-img" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Wedding Venue" />
+      <h2>Wedding Details</h2>
+      <p><strong>Date:</strong> December 15, 2025</p>
+      <p><strong>Time:</strong> 3:00 PM</p>
+      <p><strong>Ceremony Venue:</strong> San Agustin Church, Intramuros, Manila</p>
+      <p><strong>Reception Venue:</strong> Casa Blanca Events Place, Manila</p>
     </div>
 
     <div class="section">
       <h2>Dress Code</h2>
-      <p>Garden Formal – Shades of Green, Beige, or Earth Tones</p>
+      <p>Formal Attire | Color Motif: Sage Green and Cream</p>
     </div>
 
     <div class="section">
-      <h2>Venue Location</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.177675147704!2d120.93126341536626!3d14.104933190649379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd7e6a140f8ef7%3A0xb7f1f2d50a19037d!2sTagaytay!5e0!3m2!1sen!2sph!4v1616165055666" allowfullscreen="" loading="lazy"></iframe>
+      <h2>Program Timeline</h2>
+      <p>3:00 PM – Ceremony</p>
+      <p>5:00 PM – Reception</p>
+      <p>6:30 PM – Dinner and Program</p>
     </div>
 
-    <div class="section">
-      <h2>Guest List</h2>
-      <ul>
-        <li>Mom & Dad</li>
-        <li>Best Friends</li>
-        <li>College Barkada</li>
-        <li>Office Mates</li>
-        <li>Relatives from Cebu</li>
-      </ul>
-    </div>
-
-    <div class="section">
+    <div class="section entourage">
       <h2>Entourage</h2>
       <ul>
-        <li>Maid of Honor – Julia Santos</li>
-        <li>Best Man – Carlo Reyes</li>
-        <li>Bridesmaids – Toni, Kaye, Ella</li>
-        <li>Groomsmen – JR, Nico, Paolo</li>
-        <li>Flower Girls – Belle, Lia</li>
+        <li><strong>Principal Sponsors:</strong> Mr. & Mrs. Cruz, Mr. & Mrs. Santos</li>
+        <li><strong>Maid of Honor:</strong> Ana Lopez</li>
+        <li><strong>Best Man:</strong> Mark Dela Cruz</li>
+        <li><strong>Bridesmaids:</strong> Lia, Joy, Carla</li>
+        <li><strong>Groomsmen:</strong> Erik, James, Paulo</li>
+        <li><strong>Flower Girl:</strong> Sofia</li>
+        <li><strong>Ring Bearer:</strong> Nathan</li>
       </ul>
     </div>
 
-    <a class="back-link" href="index.html">← Back to Home</a>
-  </div>
+    <div class="section guests">
+      <h2>Guest List</h2>
+      <ul>
+        <li>The Dela Cruz Family</li>
+        <li>The Santos Family</li>
+        <li>Friends and Loved Ones</li>
+      </ul>
+    </div>
 
-  <script>
-    let slides = document.querySelectorAll('.slide-media');
-    let index = 0;
-    setInterval(() => {
-      slides[index].classList.remove('active');
-      index = (index + 1) % slides.length;
-      slides[index].classList.add('active');
-    }, 4000);
-  </script>
+    <div class="section">
+      <h2>Photo & Video Gallery</h2>
+      <div class="gallery">
+        <img src="prenup1.jpg" alt="Prenup Photo 1">
+        <img src="prenup2.jpg" alt="Prenup Photo 2">
+        <video src="prenup1.mp4" controls></video>
+        <img src="prenup3.jpg" alt="Prenup Photo 3">
+        <video src="prenup2.mp4" controls></video>
+      </div>
+    </div>
+
+    <div class="section rsvp">
+      <h2>RSVP</h2>
+      <p>Please confirm your attendance by clicking below:</p>
+      <button onclick="alert('Thank you! Your RSVP has been recorded.')">Confirm Attendance</button>
+    </div>
+
+    <p style="margin-top: 40px;">With love, Juan & Maria</p>
+  </div>
 </body>
 </html>
