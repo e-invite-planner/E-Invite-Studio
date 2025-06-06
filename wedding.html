@@ -4,75 +4,95 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wedding Invitation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: url('your-wedding-venue.jpg') no-repeat center center fixed;
+      font-family: 'Open Sans', sans-serif;
+      background: url('https://images.unsplash.com/photo-1521422191835-8d3d7f72c284') no-repeat center center fixed;
       background-size: cover;
       color: #2f3e2f;
     }
     .container {
-      background-color: rgba(255, 255, 255, 0.9);
-      margin: 40px auto;
-      max-width: 800px;
-      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.95);
+      margin: 50px auto;
+      max-width: 900px;
+      padding: 40px;
       border-radius: 20px;
       text-align: center;
+      box-shadow: 0 0 30px rgba(0,0,0,0.2);
     }
-    h1, h2 {
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
       margin-bottom: 10px;
+      color: #3b5b3b;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin: 20px 0 10px;
+      color: #4a674a;
     }
     p {
       margin: 10px 0;
-      line-height: 1.6;
+      line-height: 1.7;
     }
     .section {
-      margin: 30px 0;
+      margin: 40px 0;
     }
     .gallery {
       display: flex;
       overflow-x: auto;
-      gap: 10px;
+      gap: 12px;
       margin: 20px 0;
+      justify-content: center;
     }
     .gallery img, .gallery video {
       height: 200px;
       border-radius: 12px;
+      object-fit: cover;
+      flex: 0 0 auto;
     }
-    .entourage ul, .guests ul {
+    ul {
       list-style: none;
       padding: 0;
     }
-    .entourage li, .guests li {
+    li {
       margin: 5px 0;
     }
     .rsvp button {
-      padding: 10px 20px;
+      padding: 12px 30px;
       background-color: #4CAF50;
       color: white;
       border: none;
       border-radius: 30px;
       font-size: 1em;
       cursor: pointer;
+      margin-top: 15px;
     }
     .rsvp button:hover {
       background-color: #3e8e41;
+    }
+    .footer {
+      margin-top: 40px;
+      font-style: italic;
+      color: #3d5a3d;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>You're Invited!</h1>
+    <h1>You’re Invited</h1>
     <h2>Juan & Maria</h2>
-    <p>After years of love and laughter, we joyfully invite you to witness our union and celebrate this new chapter in our lives.</p>
+    <p>Join us as we celebrate love, laughter, and happily ever after.</p>
 
     <div class="section">
       <h2>Wedding Details</h2>
       <p><strong>Date:</strong> December 15, 2025</p>
       <p><strong>Time:</strong> 3:00 PM</p>
-      <p><strong>Ceremony Venue:</strong> San Agustin Church, Intramuros, Manila</p>
-      <p><strong>Reception Venue:</strong> Casa Blanca Events Place, Manila</p>
+      <p><strong>Ceremony:</strong> San Agustin Church, Intramuros, Manila</p>
+      <p><strong>Reception:</strong> Casa Blanca Events Place, Manila</p>
     </div>
 
     <div class="section">
@@ -82,12 +102,12 @@
 
     <div class="section">
       <h2>Program Timeline</h2>
-      <p>3:00 PM – Ceremony</p>
-      <p>5:00 PM – Reception</p>
-      <p>6:30 PM – Dinner and Program</p>
+      <p>3:00 PM – Wedding Ceremony</p>
+      <p>5:00 PM – Reception Begins</p>
+      <p>6:30 PM – Dinner & Celebration</p>
     </div>
 
-    <div class="section entourage">
+    <div class="section">
       <h2>Entourage</h2>
       <ul>
         <li><strong>Principal Sponsors:</strong> Mr. & Mrs. Cruz, Mr. & Mrs. Santos</li>
@@ -100,7 +120,7 @@
       </ul>
     </div>
 
-    <div class="section guests">
+    <div class="section">
       <h2>Guest List</h2>
       <ul>
         <li>The Dela Cruz Family</li>
@@ -112,21 +132,23 @@
     <div class="section">
       <h2>Photo & Video Gallery</h2>
       <div class="gallery">
-        <img src="prenup1.jpg" alt="Prenup Photo 1">
-        <img src="prenup2.jpg" alt="Prenup Photo 2">
-        <video src="prenup1.mp4" controls></video>
-        <img src="prenup3.jpg" alt="Prenup Photo 3">
-        <video src="prenup2.mp4" controls></video>
+        <img src="https://images.unsplash.com/photo-1610212974235-fd6f2b1cc0aa" alt="Prenup Photo 1">
+        <img src="https://images.unsplash.com/photo-1604881991720-5d9c07a83ef1" alt="Prenup Photo 2">
+        <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+        <img src="https://images.unsplash.com/photo-1598887142485-5f8be6c1ba59" alt="Prenup Photo 3">
+        <video src="https://www.w3schools.com/html/movie.mp4" controls></video>
       </div>
     </div>
 
     <div class="section rsvp">
       <h2>RSVP</h2>
-      <p>Please confirm your attendance by clicking below:</p>
-      <button onclick="alert('Thank you! Your RSVP has been recorded.')">Confirm Attendance</button>
+      <p>Please confirm your attendance:</p>
+      <button onclick="alert('Thank you for confirming!')">Confirm Attendance</button>
     </div>
 
-    <p style="margin-top: 40px;">With love, Juan & Maria</p>
+    <div class="footer">
+      With heartfelt joy, Juan & Maria
+    </div>
   </div>
 </body>
 </html>
