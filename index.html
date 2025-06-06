@@ -1,186 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>e-Invites by Mark Baltazar</title>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap" rel="stylesheet" />
-<style>
-  * {
-    margin: 0; padding: 0; box-sizing: border-box;
-  }
-  body {
-    font-family: 'Montserrat', sans-serif;
-    background: #0f2f1f;
-    color: #e6ffe6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  /* Background animation */
-  .animated-bg {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
-  }
-  .bubble {
-    position: absolute;
-    bottom: -100px;
-    background: rgba(255,255,255,0.08);
-    border-radius: 50%;
-    animation: float 20s linear infinite;
-  }
-  @keyframes float {
-    0% {
-      transform: translateY(0) scale(1);
-      opacity: 1;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>e-Invites by Mark Baltazar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
     }
-    100% {
-      transform: translateY(-1200px) scale(1.5);
-      opacity: 0;
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #0f2f1f;
+      color: #e6ffe6;
+      overflow-x: hidden;
     }
-  }
-
-  .container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 40px 20px 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header {
-    text-align: center;
-    margin-bottom: 60px;
-  }
-  header h1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 5rem;
-    font-weight: 700;
-    color: #a7d49b;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
-  }
-  header p {
-    font-size: 1.4rem;
-    max-width: 700px;
-    margin: 0 auto 30px;
-    color: #b9ddb3;
-    line-height: 1.6;
-  }
-  .cta-button {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 16px 60px;
-    font-size: 1.25rem;
-    font-weight: 700;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-  }
-  .cta-button:hover {
-    background-color: #3a8d3a;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  }
-
-  .categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 60px;
-  }
-  .category-card {
-    background: rgba(64, 112, 64, 0.3);
-    border-radius: 20px;
-    padding: 30px 20px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-    text-align: center;
-    width: 280px;
-    transition: background 0.3s ease, transform 0.2s ease;
-    cursor: pointer;
-  }
-  .category-card:hover {
-    background: rgba(64, 112, 64, 0.5);
-    transform: translateY(-8px);
-    box-shadow: 0 14px 30px rgba(0,0,0,0.35);
-  }
-  .category-card h2 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.4rem;
-    margin-bottom: 10px;
-    color: #d0ffd0;
-  }
-  .category-card p {
-    font-size: 1rem;
-    color: #c8f9c8;
-  }
-  .category-card a {
-    display: block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #b9ddb3;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-  .category-card a:hover {
-    color: #4caf50;
-  }
-
-  footer {
-    background-color: #133820;
-    color: #a5c8a3;
-    padding: 40px 20px;
-    text-align: center;
-    font-size: 0.9rem;
-    width: 100%;
-  }
-  footer strong {
-    display: block;
-    color: #d4f0d4;
-    margin-top: 15px;
-    font-size: 1rem;
-  }
-
-  @media (max-width: 600px) {
+    .animated-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(135deg, #0f2f1f, #1c4d30);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      z-index: -1;
+    }
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px 100px;
+      text-align: center;
+    }
     header h1 {
-      font-size: 3.5rem;
+      font-family: 'Dancing Script', cursive;
+      font-size: 5rem;
+      color: #a7d49b;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 1.3rem;
+      color: #c6f2c6;
+      max-width: 700px;
+      margin: 0 auto 40px;
     }
     .cta-button {
-      padding: 14px 40px;
-      font-size: 1.1rem;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 16px 60px;
+      font-size: 1.25rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
+    }
+    .cta-button:hover {
+      background-color: #3a8d3a;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      gap: 30px;
+      margin-top: 60px;
+    }
+    .category-card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      padding: 30px 20px;
+      transition: 0.3s;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+    .category-card:hover {
+      transform: translateY(-8px);
+      background: rgba(255,255,255,0.08);
     }
     .category-card h2 {
-      font-size: 2rem;
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.3rem;
+      color: #d0ffd0;
+      margin-bottom: 10px;
     }
-  }
-</style>
+    .category-card p {
+      font-size: 1rem;
+      color: #c8f9c8;
+    }
+    .category-card a {
+      display: block;
+      margin-top: 20px;
+      color: #b9ddb3;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .category-card a:hover {
+      color: #4caf50;
+    }
+
+    footer {
+      background-color: #133820;
+      color: #a5c8a3;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    footer strong {
+      display: block;
+      color: #d4f0d4;
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 3.5rem;
+      }
+      .cta-button {
+        padding: 14px 40px;
+        font-size: 1.1rem;
+      }
+      .category-card h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<!-- Animated background bubbles -->
-<div class="animated-bg">
-  <!-- You can duplicate or reduce these for more/less bubbles -->
-  <div class="bubble" style="left: 10%; width: 40px; height: 40px; animation-delay: 0s;"></div>
-  <div class="bubble" style="left: 30%; width: 60px; height: 60px; animation-delay: 4s;"></div>
-  <div class="bubble" style="left: 50%; width: 20px; height: 20px; animation-delay: 2s;"></div>
-  <div class="bubble" style="left: 70%; width: 50px; height: 50px; animation-delay: 6s;"></div>
-  <div class="bubble" style="left: 90%; width: 30px; height: 30px; animation-delay: 8s;"></div>
-</div>
+<div class="animated-bg"></div>
 
 <div class="container">
-
   <header>
     <h1>e-Invites</h1>
     <p>Create beautiful and personalized electronic invitations for every life event — weddings, birthdays, baptisms, graduations, and more. Share your special moments with elegance and ease.</p>
@@ -190,37 +143,36 @@
   <section class="categories">
     <div class="category-card">
       <h2>Wedding</h2>
-      <p>Elegant and timeless invitations for your special day, with options for venue details, dress code, and more.</p>
+      <p>Elegant and timeless invitations for your special day with venue info, dress code, and entourage.</p>
       <a href="wedding.html">Explore Wedding Invites →</a>
     </div>
     <div class="category-card">
       <h2>Birthday</h2>
-      <p>Fun and festive invites perfect for celebrating milestones with friends and family.</p>
+      <p>Fun and festive invites perfect for celebrating milestones with loved ones.</p>
       <a href="birthday.html">Explore Birthday Invites →</a>
     </div>
     <div class="category-card">
       <h2>Baptism</h2>
-      <p>Simple and heartfelt invitations to mark this sacred and joyful occasion.</p>
+      <p>Heartfelt and simple invitations to mark this sacred celebration.</p>
       <a href="baptism.html">Explore Baptism Invites →</a>
     </div>
     <div class="category-card">
       <h2>Graduation</h2>
-      <p>Celebrate academic success with stylish invites that honor achievements.</p>
+      <p>Celebrate academic milestones with style and gratitude.</p>
       <a href="graduation.html">Explore Graduation Invites →</a>
     </div>
     <div class="category-card">
       <h2>More</h2>
-      <p>Custom invitations for anniversaries, reunions, and all special moments.</p>
+      <p>Custom invites for anniversaries, reunions, and all memorable events.</p>
       <a href="more.html">Explore More →</a>
     </div>
   </section>
-
 </div>
 
 <footer>
   <p>This website helps you share your special moments through simple, meaningful digital invitations designed for every Filipino celebration.</p>
   <strong>Mark Baltazar<br/>Founder & Digital Creator of e-Invites</strong>
-  <p>Passionate about blending technology and creativity, Mark is dedicated to making celebrations memorable with easy-to-use digital tools.</p>
+  <p>Passionate about blending creativity and technology, Mark is dedicated to making your celebrations more special through personalized digital designs.</p>
 </footer>
 
 </body>
