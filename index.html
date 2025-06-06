@@ -1,106 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>e-Invites by You</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap" rel="stylesheet" />
-  <style>
-    /* Reset & base */
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #e6f2e6;
-      color: #2f4f2f;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
-    }
-    header {
-      max-width: 900px;
-      text-align: center;
-      margin-bottom: 40px;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>e-Invites by Mark Baltazar</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap" rel="stylesheet" />
+<style>
+  /* Reset */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #0f2f1f, #1c4d30);
+    color: #e6ffe6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #a7d49b;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+  }
+  header p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #b9ddb3;
+    line-height: 1.6;
+  }
+  .cta-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 16px 50px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .cta-button:hover {
+    background-color: #3a8d3a;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+  nav {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  nav a {
+    background-color: #3e7d35;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: background-color 0.3s ease;
+  }
+  nav a:hover {
+    background-color: #2a5b24;
+  }
+  footer {
+    margin-top: auto;
+    background-color: #133820;
+    color: #a5c8a3;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer strong {
+    display: block;
+    color: #d4f0d4;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  @media (max-width: 600px) {
     header h1 {
-      font-family: 'Dancing Script', cursive;
-      font-size: 4rem;
-      margin: 0;
-      color: #3a6b35;
-      letter-spacing: 2px;
+      font-size: 3rem;
     }
-    header p {
-      font-size: 1.3rem;
-      margin-top: 12px;
-      color: #466d3c;
-      line-height: 1.5;
-      max-width: 650px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      max-width: 700px;
-      margin-bottom: 50px;
+    .cta-button {
+      padding: 14px 30px;
+      font-size: 1.1rem;
     }
     nav a {
-      text-decoration: none;
-      background: #4caf50;
-      color: white;
-      padding: 18px 36px;
-      border-radius: 30px;
-      font-weight: 700;
-      font-size: 1.1rem;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      min-width: 130px;
-      text-align: center;
-    }
-    nav a:hover {
-      background: #3a8d3a;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
-    }
-    footer {
-      max-width: 700px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #466d3c;
-      line-height: 1.4;
-      border-top: 1px solid #9fcf9f;
-      padding-top: 20px;
-    }
-    footer strong {
-      display: block;
-      margin-top: 10px;
+      padding: 10px 20px;
       font-size: 1rem;
-      color: #2f4f2f;
     }
-  </style>
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>e-Invites</h1>
-    <p>Create beautiful and personalized electronic invitations for all your life’s events. Whether it's a wedding, birthday, baptism, or graduation, this space allows you to share every detail with elegance and ease.</p>
-  </header>
-  <nav>
-    <a href="wedding.html">Wedding</a>
-    <a href="birthday.html">Birthday</a>
-    <a href="baptism.html">Baptism</a>
-    <a href="graduation.html">Graduation</a>
-    <a href="more.html">More</a>
-  </nav>
-  <footer>
-    <p>This website was created to help people share their special moments through simple yet meaningful digital invitations. It is designed to be calming, organized, and accessible for every Filipino celebration.</p>
-    <strong>Mark Baltazar<br/>Founder & Digital Creator of e-Invites</strong>
-    <p>Passionate about blending technology and creativity, Mark is dedicated to making celebrations memorable with easy-to-use digital tools.</p>
-  </footer>
+
+<header>
+  <h1>e-Invites</h1>
+  <p>Create beautiful and personalized electronic invitations for every life event — weddings, birthdays, baptisms, graduations, and more. Share your special moments with elegance and ease.</p>
+  <a href="wedding.html" class="cta-button">Start Your Invitation</a>
+</header>
+
+<nav>
+  <a href="wedding.html">Wedding</a>
+  <a href="birthday.html">Birthday</a>
+  <a href="baptism.html">Baptism</a>
+  <a href="graduation.html">Graduation</a>
+  <a href="more.html">More</a>
+</nav>
+
+<footer>
+  <p>This website helps you share your special moments through simple, meaningful digital invitations designed for every Filipino celebration.</p>
+  <strong>Mark Baltazar<br/>Founder & Digital Creator of e-Invites</strong>
+  <p>Passionate about blending technology and creativity, Mark is dedicated to making celebrations memorable with easy-to-use digital tools.</p>
+</footer>
+
 </body>
 </html>
