@@ -11,32 +11,25 @@
     }
     body {
       font-family: 'Montserrat', sans-serif;
-      color: #203920;
-      background: url('https://images.unsplash.com/photo-1606925797300-e1da1f38aa42?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
-    }
-    .overlay {
-      background-color: rgba(255, 255, 255, 0.7);
+      background: linear-gradient(135deg, #0f2f1f, #1c4d30);
+      color: #e6ffe6;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
     }
     .container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 60px 20px 80px;
+      padding: 60px 20px;
       text-align: center;
     }
     header h1 {
       font-family: 'Dancing Script', cursive;
       font-size: 5rem;
-      color: #1e441e;
+      color: #a7d49b;
       margin-bottom: 20px;
     }
     header p {
       font-size: 1.3rem;
-      color: #2d502d;
+      color: #d5f5d5;
       max-width: 700px;
       margin: 0 auto 40px;
     }
@@ -45,16 +38,33 @@
       color: white;
       border: none;
       padding: 16px 60px;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       border-radius: 50px;
       text-decoration: none;
       font-weight: bold;
-      transition: 0.3s;
       display: inline-block;
+      margin-bottom: 40px;
+      transition: 0.3s;
     }
     .cta-button:hover {
       background-color: #3a8d3a;
       box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .scenic {
+      margin: 50px 0;
+    }
+    .scenic h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5rem;
+      color: #d0ffd0;
+      margin-bottom: 20px;
+    }
+    .scenic img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
 
     .categories {
@@ -64,38 +74,38 @@
       margin-top: 60px;
     }
     .category-card {
-      background: rgba(255, 255, 255, 0.5);
+      background: rgba(64, 112, 64, 0.3);
       border-radius: 15px;
       padding: 30px 20px;
       transition: 0.3s;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
       text-decoration: none;
       color: inherit;
     }
     .category-card:hover {
       transform: translateY(-8px);
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(64, 112, 64, 0.5);
     }
     .category-card h2 {
       font-family: 'Dancing Script', cursive;
       font-size: 2.3rem;
-      color: #1b3c1b;
+      color: #d0ffd0;
       margin-bottom: 10px;
     }
     .category-card p {
       font-size: 1rem;
-      color: #2a552a;
+      color: #c8f9c8;
     }
 
     footer {
-      background-color: rgba(255, 255, 255, 0.85);
-      color: #345934;
+      background-color: #133820;
+      color: #a5c8a3;
       padding: 40px 20px;
       text-align: center;
     }
     footer strong {
       display: block;
-      color: #1e3d1e;
+      color: #d4f0d4;
       font-size: 1rem;
       margin-top: 15px;
     }
@@ -115,43 +125,46 @@
   </style>
 </head>
 <body>
-<div class="overlay">
   <div class="container">
     <header>
       <h1>e-Invites</h1>
-      <p>Create personalized electronic invitations for weddings, birthdays, baptisms, graduations, and more. Share your life events in an elegant and effortless way.</p>
+      <p>Create beautiful and personalized electronic invitations for weddings, birthdays, baptisms, graduations, and more. Share your moments with elegance and ease.</p>
       <a href="wedding.html" class="cta-button">Start Your Invitation</a>
     </header>
+
+    <section class="scenic">
+      <h2>Feel the Mood of Celebration</h2>
+      <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=1200&q=80" alt="Scenic venue" />
+    </section>
 
     <section class="categories">
       <a class="category-card" href="wedding.html">
         <h2>Wedding</h2>
-        <p>Elegant and timeless invitations with venue details, dress code, and more.</p>
+        <p>Elegant and timeless invitations for your special day.</p>
       </a>
       <a class="category-card" href="birthday.html">
         <h2>Birthday</h2>
-        <p>Fun and colorful invites for memorable celebrations.</p>
+        <p>Fun and festive invites for joyful celebrations.</p>
       </a>
       <a class="category-card" href="baptism.html">
         <h2>Baptism</h2>
-        <p>Heartfelt designs for sacred and joyful occasions.</p>
+        <p>Simple and heartfelt invitations for sacred moments.</p>
       </a>
       <a class="category-card" href="graduation.html">
         <h2>Graduation</h2>
-        <p>Honor your academic journey with classy invites.</p>
+        <p>Celebrate academic achievements in style.</p>
       </a>
       <a class="category-card" href="more.html">
         <h2>More</h2>
-        <p>Custom invites for anniversaries, reunions, and other moments.</p>
+        <p>Custom invites for reunions, anniversaries, and more.</p>
       </a>
     </section>
   </div>
 
   <footer>
-    <p>This website helps you create digital invitations for every Filipino celebration — easy, personal, and meaningful.</p>
+    <p>This website helps you share your special moments through meaningful digital invitations designed for every Filipino celebration.</p>
     <strong>Mark Baltazar<br/>Founder & Digital Creator of e-Invites</strong>
-    <p>Mark blends creativity and tech to make your celebrations feel modern yet heartfelt — all in one click.</p>
+    <p>Mark blends creativity and tech to make events memorable through digital storytelling and beautiful designs.</p>
   </footer>
-</div>
 </body>
 </html>
