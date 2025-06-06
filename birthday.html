@@ -1,125 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Birthday Invitations by Digital Planner</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Dancing+Script&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Invitation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(135deg, #f2f8f2, #d6f5d6);
-      color: #2d3e2d;
-      min-height: 100vh;
-    }
-    header {
-      background: #a8d5ba;
-      text-align: center;
-      padding: 60px 20px;
-    }
-    header h1 {
-      font-family: 'Dancing Script', cursive;
-      font-size: 3.5rem;
-      color: #2d3e2d;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #47624f;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
+      background: linear-gradient(135deg, #1c4d30, #0f2f1f);
+      color: #f0fff0;
       padding: 20px;
     }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
-    }
-    .card {
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      padding: 25px;
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #1c3b24;
+      padding: 40px;
+      border-radius: 20px;
       text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
-    .card h3 {
+    h1 {
       font-family: 'Dancing Script', cursive;
-      color: #4caf50;
+      font-size: 3.5rem;
       margin-bottom: 10px;
-      font-size: 1.6rem;
+      color: #2e5939;
     }
-    .card p {
-      color: #4e6541;
-      line-height: 1.5;
-      font-size: 1rem;
+    h2 {
+      margin-top: 30px;
+      color: #3e7d51;
     }
-    .cta-button {
-      display: inline-block;
-      margin: 40px auto 0;
-      padding: 15px 40px;
-      background-color: #4caf50;
-      color: #fff;
-      font-size: 1.15rem;
-      font-weight: bold;
+    p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+    .info-section {
+      margin-top: 30px;
+    }
+    .rsvp button {
+      padding: 12px 30px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
       border-radius: 30px;
-      text-decoration: none;
-      transition: background-color 0.3s;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 20px;
     }
-    .cta-button:hover {
-      background-color: #3c8d3c;
-    }
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9rem;
-      background-color: #e7f7e7;
-      color: #333;
-      margin-top: 60px;
+    .rsvp button:hover {
+      background-color: #3e8e41;
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Birthday Invitations</h1>
-    <p>Explore our beautifully designed invitation templates—fresh, elegant, and fully customizable. Whether you're planning a kid’s party or celebrating a milestone, you'll find the perfect style.</p>
-  </header>
-
   <div class="container">
-    <div class="cards">
-      <div class="card">
-        <h3>Kids’ Party Templates</h3>
-        <p>Playful designs with balloons, animals, and confetti—perfect for kids aged 1–12.</p>
-      </div>
-      <div class="card">
-        <h3>Adult Celebrations</h3>
-        <p>Sophisticated and modern invitations for milestone birthdays, cocktail parties, or casual gatherings.</p>
-      </div>
-      <div class="card">
-        <h3>Theme-Based Invites</h3>
-        <p>Garden, retro disco, tropical, and more—choose a theme and make it yours.</p>
-      </div>
-      <div class="card">
-        <h3>Surprise & RSVP</h3>
-        <p>Discreet layouts ideal for surprise parties with linked RSVP forms.</p>
+    <h1>You're Invited!</h1>
+    <p>Join us for a joyful birthday celebration!</p>
+
+    <div class="info-section">
+      <h2>Celebrating:</h2>
+      <p><strong>Anna's 7th Birthday</strong></p>
+    </div>
+
+    <div class="info-section">
+      <h2>Date & Time:</h2>
+      <p><strong>Date:</strong> August 10, 2025</p>
+      <p><strong>Time:</strong> 2:00 PM - 6:00 PM</p>
+    </div>
+
+    <div class="info-section">
+      <h2>Venue:</h2>
+      <p>Happy Place Kids Park, 123 Joy Street, Quezon City</p>
+    </div>
+
+    <div class="info-section">
+      <h2>Theme & Dress Code:</h2>
+      <p>Unicorn & Rainbows Theme</p>
+      <p>Wear something colorful and magical!</p>
+    </div>
+
+    <div class="info-section">
+      <h2>Special Notes:</h2>
+      <p>Snacks and party favors will be served</p>
+      <p>No need to bring gifts, your presence is the best gift!</p>
+    </div>
+
+    <div class="info-section">
+      <h2>RSVP:</h2>
+      <p>Please confirm attendance by August 1</p>
+      <p>Contact: Mommy Lisa at 0917-123-4567</p>
+      <div class="rsvp">
+        <button onclick="alert('Thank you! Your RSVP has been recorded.')">Confirm Attendance</button>
       </div>
     </div>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2-bgXlpLHeoQFzOXm0whg142wlTY9I38JTMkPAf2WXeNVhg/viewform?usp=header"
-      target="_blank" class="cta-button">Start Your Invitation</a>
   </div>
-
-  <footer>
-    Digital invitations made easy and stylish. Designed by your Digital Planner.
-  </footer>
-
 </body>
 </html>
