@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bella’s 7th Birthday Party</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Invitation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Pacifico&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Quicksand', sans-serif;
-      background: #FFF;
-      color: #333;
+      background: #edf5e1;
+      color: #2f3e2f;
     }
     header {
-      background: #FFE082;
+      background: #a8d5ba;
       text-align: center;
-      padding: 40px 20px;
+      padding: 50px 20px;
+      border-bottom: 4px solid #88c9a1;
     }
     header h1 {
-      font-family: 'Fredoka One', cursive;
-      font-size: 3.5rem;
-      color: #EF6C00;
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      color: #2f3e2f;
+      margin-bottom: 10px;
     }
     header p {
-      margin-top: 15px;
       font-size: 1.2rem;
-      color: #5D4037;
+      color: #47624f;
     }
     .themes {
       display: grid;
@@ -33,56 +34,41 @@
       gap: 20px;
       padding: 40px 20px;
       max-width: 1000px;
-      margin: 0 auto;
+      margin: auto;
     }
     .theme-card {
-      background: #FFF3E0;
+      background: #dcedc8;
       border-radius: 15px;
       padding: 20px;
       text-align: center;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
+      transition: transform 0.3s ease;
       text-decoration: none;
       color: inherit;
     }
     .theme-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      transform: scale(1.03);
     }
     .theme-card h2 {
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.6rem;
-      color: #D84315;
-      margin-bottom: 10px;
+      font-family: 'Pacifico', cursive;
+      font-size: 1.5rem;
+      color: #558b2f;
     }
     .theme-card p {
       font-size: 0.95rem;
-      color: #6D4C41;
-      min-height: 50px;
-    }
-    .gallery {
-      padding: 40px 20px;
-      overflow-x: auto;
-      display: flex;
-      gap: 15px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .gallery img, .gallery video {
-      height: 180px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      flex-shrink: 0;
+      color: #4e6541;
+      margin-top: 10px;
     }
     .footer {
-      background: #FFECB3;
+      background: #c8e6c9;
       padding: 40px 20px;
       text-align: center;
       font-size: 1rem;
-      color: #5D4037;
+      color: #2e473b;
+      border-top: 4px solid #a5d6a7;
     }
     .footer button {
-      background: #FF7043;
+      background: #66bb6a;
       border: none;
       padding: 12px 30px;
       border-radius: 25px;
@@ -92,51 +78,43 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     .footer button:hover {
-      background: #E64A19;
+      background: #4caf50;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Bella’s 7th Birthday! 🎉</h1>
-    <p>Choose a theme that will make your party extra special!</p>
+    <h1>Let's Celebrate!</h1>
+    <p>Choose your favorite birthday theme and join the fun</p>
   </header>
 
   <section class="themes">
-    <a href="#rainbow" class="theme-card">
-      <h2>Rainbows & Unicorns</h2>
-      <p>Bright pastel colors, sparkles, and magical vibes.</p>
+    <a href="#" class="theme-card">
+      <h2>Garden Party</h2>
+      <p>Fresh greens, flowers, and outdoor fun for all ages</p>
     </a>
-    <a href="#space" class="theme-card">
-      <h2>Space Adventure</h2>
-      <p>Rocket ships, stars, and an out-of-this-world experience.</p>
+    <a href="#" class="theme-card">
+      <h2>Safari Adventure</h2>
+      <p>Roar into the wild with animals and jungle vibes</p>
     </a>
-    <a href="#jungle" class="theme-card">
-      <h2>Jungle Safari</h2>
-      <p>Animal decor, leafy greens, and wild exploration.</p>
+    <a href="#" class="theme-card">
+      <h2>Carnival Fun</h2>
+      <p>Colorful tents, popcorn, and exciting games</p>
     </a>
-    <a href="#superhero" class="theme-card">
-      <h2>Superhero Party</h2>
-      <p>Capes, masks, and fun action-packed activities.</p>
+    <a href="#" class="theme-card">
+      <h2>Princess Tea</h2>
+      <p>Royal treats, glitter, and dress-up for the day</p>
     </a>
-    <a href="#pool" class="theme-card">
-      <h2>Pool Splash</h2>
-      <p>Water games, floats, and summer vibes.</p>
+    <a href="#" class="theme-card">
+      <h2>Retro Dance</h2>
+      <p>Music, neon lights, and 80s flair</p>
     </a>
-  </section>
-
-  <section class="gallery">
-    <img src="https://images.unsplash.com/photo-1557246565-7d2b90c2e0eb?auto=format&fit=crop&w=400&q=80" alt="Rainbow theme sample">
-    <img src="https://images.unsplash.com/photo-1594032194505-e7d6ebaa8c3e?auto=format&fit=crop&w=400&q=80" alt="Unicorn fun">
-    <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
-    <img src="https://images.unsplash.com/photo-1554260570-d8f46c2aa2a5?auto=format&fit=crop&w=400&q=80" alt="Party games">
-    <video src="https://www.w3schools.com/html/movie.mp4" controls></video>
   </section>
 
   <footer class="footer">
-    <p>Select your theme above, then click below to RSVP!</p>
-    <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSd2-bgXlpLHeoQFzOXm0whg142wlTY9I38JTMkPAf2WXeNVhg/viewform'">RSVP on Google Form</button>
+    <p>Click below to RSVP and send your event details</p>
+    <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSd2-bgXlpLHeoQFzOXm0whg142wlTY9I38JTMkPAf2WXeNVhg/viewform'">RSVP Now</button>
   </footer>
 
 </body>
