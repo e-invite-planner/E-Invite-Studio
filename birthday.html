@@ -1,104 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Birthday Invitation</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(135deg, #1c4d30, #0f2f1f);
-      color: #f0fff0;
-      padding: 20px;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background-color: rgba(255, 255, 255, 0.9);
-      color: #1c3b24;
-      padding: 40px;
-      border-radius: 20px;
-      text-align: center;
-    }
-    h1 {
-      font-family: 'Dancing Script', cursive;
-      font-size: 3.5rem;
-      margin-bottom: 10px;
-      color: #2e5939;
-    }
-    h2 {
-      margin-top: 30px;
-      color: #3e7d51;
-    }
-    p {
-      font-size: 1.1rem;
-      margin: 10px 0;
-    }
-    .info-section {
-      margin-top: 30px;
-    }
-    .rsvp button {
-      padding: 12px 30px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 30px;
-      font-size: 1rem;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-    .rsvp button:hover {
-      background-color: #3e8e41;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Birthday Invitation</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #0f2f1f, #1c4d30);
+    color: #e6ffe6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  .container {
+    max-width: 800px;
+    background: rgba(64, 112, 64, 0.85);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  }
+  h1, h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #a7d49b;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .section {
+    margin-bottom: 30px;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .gallery img {
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 30px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #3a8d3a;
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="container">
-    <h1>You're Invited!</h1>
-    <p>Join us for a joyful birthday celebration!</p>
 
-    <div class="info-section">
-      <h2>Celebrating:</h2>
-      <p><strong>Anna's 7th Birthday</strong></p>
-    </div>
-
-    <div class="info-section">
-      <h2>Date & Time:</h2>
-      <p><strong>Date:</strong> August 10, 2025</p>
-      <p><strong>Time:</strong> 2:00 PM - 6:00 PM</p>
-    </div>
-
-    <div class="info-section">
-      <h2>Venue:</h2>
-      <p>Happy Place Kids Park, 123 Joy Street, Quezon City</p>
-    </div>
-
-    <div class="info-section">
-      <h2>Theme & Dress Code:</h2>
-      <p>Unicorn & Rainbows Theme</p>
-      <p>Wear something colorful and magical!</p>
-    </div>
-
-    <div class="info-section">
-      <h2>Special Notes:</h2>
-      <p>Snacks and party favors will be served</p>
-      <p>No need to bring gifts, your presence is the best gift!</p>
-    </div>
-
-    <div class="info-section">
-      <h2>RSVP:</h2>
-      <p>Please confirm attendance by August 1</p>
-      <p>Contact: Mommy Lisa at 0917-123-4567</p>
-      <div class="rsvp">
-        <button onclick="alert('Thank you! Your RSVP has been recorded.')">Confirm Attendance</button>
-      </div>
-    </div>
+<div class="container">
+  <h1>You're Invited!</h1>
+  <h2>Maria's 7th Birthday Bash</h2>
+  <div class="section">
+    <p><strong>Date:</strong> July 20, 2025</p>
+    <p><strong>Time:</strong> 2:00 PM - 6:00 PM</p>
+    <p><strong>Venue:</strong> Sunshine Garden, Quezon City</p>
   </div>
+
+  <div class="section">
+    <p><strong>Theme:</strong> Enchanted Forest</p>
+    <p><strong>Dress Code:</strong> Casual / Fairy Tale Inspired</p>
+  </div>
+
+  <div class="section">
+    <p>Join us for fun games, delicious treats, and magical memories as we celebrate Maria's special day! Kids and adults alike will enjoy the festivities.</p>
+  </div>
+
+  <div class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="birthday1.jpg" alt="Birthday Photo 1">
+      <img src="birthday2.jpg" alt="Birthday Photo 2">
+      <img src="birthday3.jpg" alt="Birthday Photo 3">
+    </div>
+    <video controls>
+      <source src="birthday_video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="section">
+    <button onclick="alert('Thank you! Your RSVP has been recorded.')">RSVP Now</button>
+  </div>
+</div>
+
 </body>
 </html>
