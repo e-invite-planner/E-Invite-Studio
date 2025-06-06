@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Birthday Invitations</title>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Invitations by Digital Planner</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Dancing+Script&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Montserrat', sans-serif;
       background: linear-gradient(135deg, #f2f8f2, #d6f5d6);
@@ -18,78 +13,66 @@
       min-height: 100vh;
     }
     header {
-      background: url('https://images.unsplash.com/photo-1584467735871-bd1a1d676c1c') no-repeat center center/cover;
-      height: 60vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background: #a8d5ba;
       text-align: center;
-      color: white;
+      padding: 60px 20px;
     }
     header h1 {
       font-family: 'Dancing Script', cursive;
-      font-size: 4rem;
-      background: rgba(0, 0, 0, 0.4);
-      padding: 20px;
-      border-radius: 10px;
+      font-size: 3.5rem;
+      color: #2d3e2d;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #47624f;
+      max-width: 700px;
+      margin: 0 auto;
     }
     .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .section {
-      margin: 40px 0;
-    }
-    .section h2 {
-      font-family: 'Dancing Script', cursive;
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-      color: #4caf50;
-    }
-    .section p {
-      font-size: 1.1rem;
-      color: #444;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
     }
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 30px;
-      margin-top: 30px;
     }
     .card {
       background: #ffffff;
-      border-radius: 15px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      transition: transform 0.3s ease;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .card:hover {
-      transform: translateY(-8px);
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
     .card h3 {
-      font-size: 1.5rem;
+      font-family: 'Dancing Script', cursive;
+      color: #4caf50;
       margin-bottom: 10px;
-      color: #2d5c2d;
+      font-size: 1.6rem;
     }
     .card p {
+      color: #4e6541;
+      line-height: 1.5;
       font-size: 1rem;
-      color: #555;
     }
     .cta-button {
-      margin-top: 40px;
-      background-color: #4caf50;
-      color: white;
-      padding: 15px 40px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      text-decoration: none;
       display: inline-block;
+      margin: 40px auto 0;
+      padding: 15px 40px;
+      background-color: #4caf50;
+      color: #fff;
+      font-size: 1.15rem;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s;
     }
     .cta-button:hover {
       background-color: #3c8d3c;
@@ -100,44 +83,43 @@
       font-size: 0.9rem;
       background-color: #e7f7e7;
       color: #333;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Celebrate Life with Style</h1>
+    <h1>Birthday Invitations</h1>
+    <p>Explore our beautifully designed invitation templates—fresh, elegant, and fully customizable. Whether you're planning a kid’s party or celebrating a milestone, you'll find the perfect style.</p>
   </header>
 
   <div class="container">
-    <section class="section">
-      <h2>Birthday Invitations</h2>
-      <p>Discover our collection of fun, colorful, and fully customizable invitations for both kids and adults. Whether it's a surprise party or a themed celebration, make your invites special!</p>
-    </section>
-
-    <section class="cards">
+    <div class="cards">
       <div class="card">
-        <h3>Kids Party</h3>
-        <p>Bright, playful designs with cartoon themes, balloons, and confetti for a fun celebration.</p>
+        <h3>Kids’ Party Templates</h3>
+        <p>Playful designs with balloons, animals, and confetti—perfect for kids aged 1–12.</p>
       </div>
       <div class="card">
-        <h3>Adult Birthday</h3>
-        <p>Elegant or themed options for milestone birthdays, cocktail parties, or simple get-togethers.</p>
+        <h3>Adult Celebrations</h3>
+        <p>Sophisticated and modern invitations for milestone birthdays, cocktail parties, or casual gatherings.</p>
       </div>
       <div class="card">
-        <h3>Surprise Party</h3>
-        <p>Send secret invites with RSVP tracking and all the fun without giving anything away!</p>
+        <h3>Theme-Based Invites</h3>
+        <p>Garden, retro disco, tropical, and more—choose a theme and make it yours.</p>
       </div>
       <div class="card">
-        <h3>Theme Parties</h3>
-        <p>From retro to tropical vibes, create personalized invites that match your party's theme.</p>
+        <h3>Surprise & RSVP</h3>
+        <p>Discreet layouts ideal for surprise parties with linked RSVP forms.</p>
       </div>
-    </section>
-
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2-bgXlpLHeoQFzOXm0whg142wlTY9I38JTMkPAf2WXeNVhg/viewform?usp=header" class="cta-button">Start Your Invitation</a>
+    </div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2-bgXlpLHeoQFzOXm0whg142wlTY9I38JTMkPAf2WXeNVhg/viewform?usp=header"
+      target="_blank" class="cta-button">Start Your Invitation</a>
   </div>
 
   <footer>
-    <p>Digital invitations made easy and joyful for every birthday celebration. Crafted with love by your Digital Planner.</p>
+    Digital invitations made easy and stylish. Designed by your Digital Planner.
   </footer>
+
 </body>
 </html>
